@@ -87,6 +87,7 @@
 	<td><a href="#contact">Ask for details</a>
 </tr>
 </tbody>
+
 <tbody>
 <tr>
       <th scope="row">Batangas Nature Tour</th>
@@ -103,21 +104,54 @@
 			 <h4>Sample Email: <a href="Lakbay@gmail.com">lakbay@gmail.com</a></h4>
 			 </p>
 			 
-			 <table>
-			 <tr>
+		 <table>
+	     <tr>
 			   <td><h4>Sample Phone</td></h4>
 			   <td><p>0912-345-6111</td></p>
-			   </tr>
-			   </table>
+		</tr>
+   </table>
 			   <p>These are classroom placeholders. No real inquiry or booking service is available</p>
 			   <h4>First Inquiry Form Control</h4>
 			   <p>Practice only: This field does send or store an inquiry</p>
 			   <form action="#contact" method="get">
 			   <label for=" visitor -name">Your name</label>
 			   <input id="visitor name" type="text">
-			   </form>
-			   </input>
-      </section
+ </form>
+ 
+  <form action="#contact" method="get">
+			   <label for=" visitor -email">email (required) </label>
+			   <input id="visitor-email" name="visitor_email " type="text">
+ </form>
+ 
+ <form action="#contact" method="get">
+     <label for="tour-choices">Tour (required) </label>
+	 <select  id="tour-choices" name="tour_choices" type="text"> 
+	 
+       <option value="choose tour"> choose tour </option>
+      <option value="taal heritage tour"> taal heritage tour </option>
+     <option value="beach tour"> beach tour </option>
+      <option value="batangas nature tour"> batangas nature tour </option>
+</select>
+ </form>
+ 
+ <br> 
+ <label for="message (optional)"> message (optional) </label>
+ <textarea  id ="message (optional)" name="message (optional)" rows="3 cols="38"></textarea>
+ <br>
+ <br>
+ 
+ <fieldset>
+   <legend> preferred Demo response </legend>
+   <input type="radio" name="response_method" value="email"></input>
+   <label for="email"> email</label>
+   <input type="radio" name="response_method" value="no reply needed"></input>
+   <label for="no reply needed"> no reply needed</label>
+  </fieldset>
+  <br>
+  <button type="submit"> check demo form</button>
+  
+	
+  
 	  
 	  
 </body>
