@@ -4,9 +4,11 @@ header{
     text-align:center;
 }
 
+
+
 nav a{
-    background: #e3e3e9;
-    color: #040408;
+    background: #e3e3e9; 
+    color: #364edb;
     margin: 18px;
     font-size: 25;
 }
@@ -15,16 +17,26 @@ nav a:hover {
     background:#040408;
     color:#dddde9;   
 }
+
 body
 {
-    background-color: #84e9ec;
+    background-color: #59b0b9;
     text-align: center;
 }
+
+#home p {
+    font-size: xx-large;
+}
+
+body article{
+    background-color: palegoldenrod;
+   
+}
+
 h2{ 
-    background-color: #22898d;
-    color: #dddde9;
+    color: #1a1aa3;
     margin: 50px;
-    font-size: 25px;
+    font-size: 50px;
 }
 
 img { 
@@ -34,15 +46,22 @@ img {
 
 }
 table {
-    background-color: #395ac5;
-    margin:"0";
-    font-size: 18px;
-    padding: 70px;
+    background-color: #76787e;
+    margin:30px;
+    font-size: 25px;
+    padding: 75px;
     width: 1200px;
-    margin-inline: 270px;
+    margin-inline: 750px;
+    
 }
-#section {
-    background-color: #395ac5;
+
+
+tbody td a {
+    color: #84e9ec;
+}
+
+#section p {
+    background: #22898d;
 }
 
 section a:hover {
