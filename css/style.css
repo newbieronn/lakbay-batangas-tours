@@ -1,98 +1,127 @@
-
-
-header{
+header {
     background-color: #0a420d;
     color: #eaecf0;
-    text-align:center;
-    padding: 25px;
+    text-align: center;
+    padding: 30px 20px 20px;
     font-size: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+
 }
 
-
-
-
+header{
+    margin: auto;
+    padding: 20px 15px 0 15px;
+    text-align: center;
+   
+}
+ 
+header h1 {
+    font-size: 30px; 
+}
 
 nav a {
-   
     color: #faf7f7;
     margin: 10px;
     font-size: 30px;
+    text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     background: #9adefd;
-    color:#010302;   
+    color: #010302;   
 }
 
-body
-{
+body {
     background-color: #ffffff;  
-   
+    font-family: sans-serif;
+    font-size: 16px;    
+    line-height: 1.6;       
+    max-width: 100%;
+    margin: auto;
 }
 
 body section {
     color: #000000;
     font-size: 30px;
-    
+    padding: 22px;
+}
+
+#home {
+    min-height: 300px;
+}
+
+#home h2 {
+    font-size: 28px;
 }
 
 #home p {
     font-size: xx-large;
 }
 
-
-body article{
+body article {
     background-color: palegoldenrod;
-   
 }
 
-h2{ 
+h2 { 
     color: #0c0c61;
     margin: 50px;
     font-size: 50px;
 }
 
-
 img { 
-    width: 1200px;
-    height: 800px;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
 }
-
 
 form {
-    text-align: 20px;
+    padding: 15px; 
 }
-
 
 table {
     background-color: #76787e;
-    margin:30px;
-    font-size: 25px;
-    padding: 75px;
-    width: 1200px;
-    margin-inline: 700px;
-    
+    margin: 30px auto;
+    font-size: 30px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center; 
+    border-collapse: collapse;
 }
 
+th, td {
+    border: 1px solid #0a420d;
+    padding: 14px;
+    text-align: left;
+}
+
+caption {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    background: #070e0f;
+    color: white;
+}
 
 tbody td a {
     color: #84e9ec;
 }
 
-#section p {
-    background: #22898d;
+section p {
+    background: transparent; 
 }
 
 section a:hover {
     background: #080404;
     color: #fcf7f7;
 }
-
+ 
 table a:hover {
     background: #040408;
     color: #faf7f7;
 }
-
 
 select {
     background: #676867;
@@ -104,8 +133,7 @@ select {
     cursor: pointer;   
 }   
 
-
-fieldset{
+fieldset {
     font-family: sans-serif;
     font-size: 30px;
     padding: 20px;
@@ -115,29 +143,94 @@ fieldset{
 a:focus-visible {
     outline: 5px solid #19cdec;
     outline-offset: 5px;
-    background-color: #064f6b;
 }
 
-label{
+label {
     font-family: sans-serif;
     font-size: 25px;
     padding: 30px; 
     margin: 20px;
 }
 
-input{
+input {
     font-family: sans-serif;
     font-size: 20px;
     padding: 20px;
     margin: 20px;
 }
 
-
 footer {
     background-color: #040408;
-    color:#dddde9;
+    color: #dddde9;
+    text-align: center;
+    padding: 20px;
+}
+
+.box {
+    display: grid;
+    justify-content: space-around;
+    position: relative;
+    border-radius: 15px;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (width <= 800px) {
+    .box  {
+            grid-template-columns: 1fr;
+    }
+}
+
+.sidebox1, .sidebox2, .sidebox3 {
+   
+    background-color: #a0aeb1;
+    width: 30%;
+    min-height: 400px;
+}
+
+#TourPackagestitletext {
     text-align: center;
 }
 
+.feature {
+    position: absolute;
+    background: #f5965f;
+    top: 0%;
+    right: 20px;    
+    border-radius: 10px;
+    padding: 5px 10px;
+}
 
+.pack {
+    position: relative;
+}
+ 
 
+    header h1 {
+        font-size: 27px; 
+
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav-link a {
+        padding: 8px 15px;
+    }
+    
+    .box {
+        align-items: center;
+    }
+
+    .sidebox1, .sidebox2, .sidebox3 {
+        width: 90%;
+        text-align: center;
+    }
+
+    .box1{
+        background-color: #676867;
+    }
+   
